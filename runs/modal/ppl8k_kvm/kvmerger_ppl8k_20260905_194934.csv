@@ -1,0 +1,4 @@
+Task,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext
+Model,name,alias,sample_len,"word_perplexity,none","word_perplexity_stderr,none","byte_perplexity,none","byte_perplexity_stderr,none","bits_per_byte,none","bits_per_byte_stderr,none"
+kvmerger;per_head=false,wikitext,wikitext,6,4.15418005325525,N/A,1.3200088757986228,N/A,0.40054763036221824,N/A
+kvmerger;observation_window=32;per_head=false;pool_kernel=7,wikitext,wikitext,6,4.141636150023422,N/A,1.3192308620360857,N/A,0.399697054635142,N/A

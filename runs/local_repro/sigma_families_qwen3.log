@@ -1,0 +1,16 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  11%|█         | 34/311 [00:00<00:00, 337.57it/s]Loading weights:  37%|███▋      | 116/311 [00:00<00:00, 617.31it/s]Loading weights:  65%|██████▍   | 202/311 [00:00<00:00, 719.93it/s]Loading weights:  94%|█████████▎| 291/311 [00:00<00:00, 785.92it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 741.10it/s]
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "oracle_median_sigma": 1.2422890515909308,
+  "oracle_frac_le_0.285": 0.003937252001681675,
+  "oracle_frac_le_0.9": 0.1818886405505639,
+  "repeat8x_median_sigma": 1.0718947813979216,
+  "repeat8x_frac_le_0.285": 0.01990327367093414,
+  "same_token_by_distance": {
+    "0-8": 1.3793970346450806,
+    "8-64": 1.8110099236170452,
+    "64-512": 1.9715676705042522,
+    "512-100000": 2.0048421223958335
+  }
+}
+wrote runs/local_repro/sigma_qwen3.json

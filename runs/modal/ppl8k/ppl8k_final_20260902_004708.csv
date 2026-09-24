@@ -1,0 +1,10 @@
+Task,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext
+Model,name,alias,sample_len,"word_perplexity,none","word_perplexity_stderr,none","byte_perplexity,none","byte_perplexity_stderr,none","bits_per_byte,none","bits_per_byte_stderr,none"
+baseline,wikitext,wikitext,6,3.3164377621465078,N/A,1.253931773555535,N/A,0.326458853219038,N/A
+h2o,wikitext,wikitext,6,4.302438723377845,N/A,1.3170738071731405,N/A,0.3973361946901585,N/A
+snapkv;observation_window=32;per_head=false;pool_kernel=7,wikitext,wikitext,6,4.494259295174154,N/A,1.3279617928272371,N/A,0.40921363908572683,N/A
+pyramidkv;observation_window=32;per_head=false,wikitext,wikitext,6,4.324170869705698,N/A,1.3183269025988622,N/A,0.39870815659787795,N/A
+streamingllm,wikitext,wikitext,6,3.904875290590932,N/A,1.2931906397727588,N/A,0.37093497026122174,N/A
+otkv7,wikitext,wikitext,6,4.430994483332813,N/A,1.3244131874378267,N/A,0.40535328111214824,N/A
+otkv7;layer_alloc=uniform,wikitext,wikitext,6,4.4663124670734655,N/A,1.3263992487489096,N/A,0.40751509482738546,N/A
+otkv7;vnorm_tau=0,wikitext,wikitext,6,4.515063234069163,N/A,1.3291198585387975,N/A,0.4104712111020197,N/A

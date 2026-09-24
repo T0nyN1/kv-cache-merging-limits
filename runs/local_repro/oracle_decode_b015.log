@@ -1,0 +1,18 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 81/311 [00:00<00:00, 804.66it/s]Loading weights:  52%|█████▏    | 162/311 [00:00<00:00, 782.96it/s]Loading weights:  83%|████████▎ | 257/311 [00:00<00:00, 854.93it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 859.36it/s]
+  [qa_needle] distinct generated tokens: 79/256
+  [qa_needle] distinct generated tokens: 76/256
+
+[qa_needle]  (median over heads; fraction of squared eviction error removed)
+  decode_fit    lam=0.001: in 0.813 out 0.484  lam=0.1: in 0.547 out 0.425  lam=1: in 0.405 out 0.375
+  decode_fit_interleaved  lam=0.001: in 0.793 out 0.546  lam=0.1: in 0.536 out 0.444  lam=1: in 0.408 out 0.376
+  prefill_128   lam=0.001: in 0.917 out 0.209  lam=0.1: in 0.622 out 0.169  lam=1: in 0.408 out 0.122
+  prefill_512   lam=0.001: in 0.658 out -1.514  lam=0.1: in 0.479 out -0.218  lam=1: in 0.333 out -0.380
+  [continuation] distinct generated tokens: 110/256
+  [continuation] distinct generated tokens: 101/256
+
+[continuation]  (median over heads; fraction of squared eviction error removed)
+  decode_fit    lam=0.001: in 0.860 out 0.490  lam=0.1: in 0.575 out 0.399  lam=1: in 0.401 out 0.330
+  decode_fit_interleaved  lam=0.001: in 0.848 out 0.615  lam=0.1: in 0.549 out 0.464  lam=1: in 0.380 out 0.370
+  prefill_128   lam=0.001: in 0.918 out 0.343  lam=0.1: in 0.650 out 0.275  lam=1: in 0.435 out 0.224
+  prefill_512   lam=0.001: in 0.593 out -1.815  lam=0.1: in 0.427 out -0.082  lam=1: in 0.306 out -0.072
+wrote runs/local_repro/classa_oracle_decode_qwen3_b015.json

@@ -1,0 +1,4 @@
+Task,longbench,longbench,longbench,longbench,longbench,longbench,longbench,longbench
+Model,qasper_score,qasper_metric,qasper_tested_samples,qasper_truncated_samples,samsum_score,samsum_metric,samsum_tested_samples,samsum_truncated_samples
+baseline,0.1845243228041788,qa_f1_score,10,0,0.2441446872674437,rouge_score,10,8
+snapkv;observation_window=32;per_head=false;pool_kernel=7,0.116413859576285,qa_f1_score,10,0,0.24562427459079675,rouge_score,10,8

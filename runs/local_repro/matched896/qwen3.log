@@ -1,0 +1,62 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<03:29,  1.48it/s]Loading weights:   1%|          | 2/311 [00:01<02:38,  1.95it/s]Loading weights:  47%|████▋     | 147/311 [00:01<00:00, 200.27it/s]Loading weights:  66%|██████▌   | 204/311 [00:01<00:00, 185.17it/s]Loading weights:  79%|███████▉  | 245/311 [00:01<00:00, 187.99it/s]Loading weights:  89%|████████▉ | 278/311 [00:01<00:00, 172.13it/s]Loading weights:  98%|█████████▊| 305/311 [00:02<00:00, 111.14it/s]Loading weights: 100%|██████████| 311/311 [00:02<00:00, 121.85it/s]
+[continuation0] L=896 seps=33 capture 0.9s decode 6.4s heads 19.7s  gen='ista at the local coffee shop is a source of constant frustr'
+[continuation1] L=896 seps=32 capture 0.6s decode 5.1s heads 22.6s  gen=' the open ocean . \n In the early 21st century , the steam pr'
+[continuation2] L=896 seps=37 capture 0.6s decode 5.0s heads 24.3s  gen=' or Negritos , were present in the area as early as 100 BCE '
+[niah0] L=914 seps=31 capture 0.7s decode 5.3s heads 23.1s  gen=' 889777.\nOkay, let me try to figure out the answer to the qu'  answer_ok=False
+[niah1] L=914 seps=35 capture 0.7s decode 5.2s heads 22.8s  gen=' 337491.\nOkay, let me try to figure out the answer to this q'  answer_ok=False
+[niah2] L=933 seps=23 capture 0.7s decode 5.3s heads 26.4s  gen=' 532406.\n\nBased on the above, why is the answer 542603?\n\nThe'  answer_ok=False
+
+== v8 offline: qwen3-1.7b_m896 budget 0.15   (336 heads, 0 invalid) ==
+condition   dec mean  dec med  dec p90    late  dec pre  aud mean   prop   appl   mass   g>0  <base  >1.05
+baseline      1.0000   1.0000   1.0000  1.0000   1.0000    1.0000    0.0    0.0  0.000  0.00   0.00   0.00
+ot            0.8717   0.8569   1.0000  0.9009   0.8819    0.8988   35.1   33.6  0.087  0.95   0.87   0.06
+greedy        0.8679   0.8590   1.0000  0.8851   0.8794    0.8995   34.8   33.4  0.086  0.95   0.88   0.05
+nobias        0.9990   1.0000   1.0000  1.0164   0.9993    1.0058   35.1    6.7  0.017  0.18   0.15   0.02
+biasonly      0.8643   0.8766   1.0000  0.8737   0.8810    0.8452   32.2   29.8  0.080  0.90   0.84   0.04
+random        0.8744   0.8794   1.0000  0.8983   0.8915    0.8450   35.1   33.1  0.069  0.92   0.85   0.07
+massc         0.9429   0.9352   1.0000  0.9660   0.9441    1.1184   34.5   28.4  0.078  0.79   0.73   0.03
+online        0.8220   0.8091   1.0000  1.0510   0.8421    0.8711   32.8   30.1  0.080  0.91   0.88   0.02
+oracle        0.7519   0.7620   0.9147  0.7489   0.7809    0.9261   35.0   35.0  0.095  1.00   1.00   0.00
+ot decode gain (1-rel): mean +0.1283  heads-CI [+0.0977, +0.1588]  prompt-cluster-CI [+0.0722, +0.1727] (6 prompts)
+                        median +0.1431 without-top-10% +0.0945 worst head rel 3.5200
+                        per prompt: continuation0 +0.012, continuation1 +0.102, continuation2 +0.172, niah0 +0.104, niah1 +0.192, niah2 +0.188
+ot audit gain:          mean +0.1012 [-0.0223, +0.2247]   ot decode gain, prefill-only cache: +0.1181 [+0.0921, +0.1441]
+greedy - ot (decode):   mean -0.0038  heads-CI [-0.0079, +0.0003]  cluster-CI [-0.0080, -0.0001]  ot better in 0.53 of heads, tied 0.16
+oracle decode gain:     mean +0.2481  cluster-CI [+0.2106, +0.2892]  median +0.2380
+massc decode gain:      mean +0.0571  cluster-CI [+0.0258, +0.0805]  (c from the mass fit only)
+biasonly decode gain:   mean +0.1357  cluster-CI [+0.0950, +0.1768]  (theta = 0)
+ot       LATE-row gain:  mean +0.0991  cluster-CI [+0.0173, +0.1754]
+online   LATE-row gain:  mean -0.0510  cluster-CI [-0.4410, +0.2071]
+oracle   LATE-row gain:  mean +0.2511  cluster-CI [+0.2170, +0.2930]
+time: costs 4.9s match 0.1s greedy 0.0s oracle 6.7s heads total 57.5s; evaluate_outputs vs harness max rel gap 6.87e-06
+gates: no_invalid_records=PASS, decode_gain_ge_5pct=PASS, decode_gain_cluster_ci_excludes_zero=PASS, decode_gain_not_concentrated=PASS, merges_applied_not_near_zero=PASS, ot_beats_greedy_cluster_ci=FAIL, oracle_gain_positive=PASS, oracle_gain_ge_5pct=PASS
+H1 (deployable merge beats eviction): PASS   H3 (matching beats greedy): FAIL
+wrote runs/local_repro/matched896/v8_offline_qwen3-1.7b_m896_b0.15.json
+
+== v8 offline: qwen3-1.7b_m896 budget 0.25   (336 heads, 0 invalid) ==
+condition   dec mean  dec med  dec p90    late  dec pre  aud mean   prop   appl   mass   g>0  <base  >1.05
+baseline      1.0000   1.0000   1.0000  1.0000   1.0000    1.0000    0.0    0.0  0.000  0.00   0.00   0.00
+ot            0.8311   0.8005   1.0201  0.7746   0.8589    0.9094   67.8   65.8  0.153  0.98   0.86   0.09
+greedy        0.8367   0.7978   1.0500  0.7803   0.8635    0.9160   67.2   65.0  0.151  0.97   0.85   0.10
+nobias        0.9861   1.0000   1.0000  0.9798   0.9880    1.1015   67.8   26.4  0.065  0.39   0.33   0.05
+biasonly      0.7810   0.7890   1.0000  0.7527   0.8173    0.7991   61.1   57.4  0.138  0.93   0.85   0.05
+random        0.9107   0.8110   1.0000  0.7999   0.9181    0.8359   67.7   65.6  0.120  0.97   0.88   0.05
+massc         0.9793   0.8837   1.0000  0.8737   0.9730    1.1705   66.5   60.0  0.146  0.91   0.83   0.06
+online        0.6785   0.6815   0.9138  0.7445   0.7243    0.8392   64.5   61.3  0.149  0.96   0.94   0.01
+oracle        0.6297   0.6258   0.8586  0.6265   0.6772    0.8264   69.4   69.4  0.168  1.00   1.00   0.00
+ot decode gain (1-rel): mean +0.1689  heads-CI [+0.1171, +0.2207]  prompt-cluster-CI [+0.1115, +0.2280] (6 prompts)
+                        median +0.1995 without-top-10% +0.1206 worst head rel 7.0539
+                        per prompt: continuation0 +0.103, continuation1 +0.148, continuation2 +0.063, niah0 +0.169, niah1 +0.259, niah2 +0.271
+ot audit gain:          mean +0.0906 [-0.0602, +0.2414]   ot decode gain, prefill-only cache: +0.1411 [+0.0943, +0.1879]
+greedy - ot (decode):   mean +0.0056  heads-CI [-0.0018, +0.0129]  cluster-CI [-0.0013, +0.0124]  ot better in 0.57 of heads, tied 0.05
+oracle decode gain:     mean +0.3703  cluster-CI [+0.3192, +0.4214]  median +0.3742
+massc decode gain:      mean +0.0207  cluster-CI [-0.1275, +0.1191]  (c from the mass fit only)
+biasonly decode gain:   mean +0.2190  cluster-CI [+0.1575, +0.2885]  (theta = 0)
+ot       LATE-row gain:  mean +0.2254  cluster-CI [+0.1732, +0.2797]
+online   LATE-row gain:  mean +0.2555  cluster-CI [+0.1852, +0.3202]
+oracle   LATE-row gain:  mean +0.3735  cluster-CI [+0.3313, +0.4145]
+time: costs 6.9s match 0.1s greedy 0.1s oracle 10.3s heads total 80.4s; evaluate_outputs vs harness max rel gap 1.13e-05
+gates: no_invalid_records=PASS, decode_gain_ge_5pct=PASS, decode_gain_cluster_ci_excludes_zero=PASS, decode_gain_not_concentrated=PASS, merges_applied_not_near_zero=PASS, ot_beats_greedy_cluster_ci=FAIL, oracle_gain_positive=PASS, oracle_gain_ge_5pct=PASS
+H1 (deployable merge beats eviction): PASS   H3 (matching beats greedy): FAIL
+wrote runs/local_repro/matched896/v8_offline_qwen3-1.7b_m896_b0.25.json
+total 184s

@@ -1,0 +1,11 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   1%|          | 2/311 [00:00<00:19, 15.69it/s]Loading weights:  40%|████      | 125/311 [00:00<00:00, 644.42it/s]Loading weights:  68%|██████▊   | 213/311 [00:00<00:00, 738.40it/s]Loading weights:  97%|█████████▋| 302/311 [00:00<00:00, 790.22it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 712.55it/s]
+
+jointly-optimal class-A merge, budget 0.15, 112 heads   (fraction of squared eviction error removed)
+  lambda    in-sample     held-out
+   1e-06        0.741        0.150
+   0.001        0.739        0.236
+     0.1        0.640        0.340
+       1        0.473        0.260
+
+logit-gap Gaussianity: median |skew| 0.125, median excess kurtosis 0.093
+wrote runs/local_repro/classa_oracle_qwen3_prefill3072_probe2048.json

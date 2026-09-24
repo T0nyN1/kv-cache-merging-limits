@@ -1,0 +1,19 @@
+{
+ "model": "models/Llama-3.1-8B-Instruct",
+ "budget": 0.15,
+ "prefill": 2500,
+ "docs": 2,
+ "samples": 112,
+ "full": {
+  "gap_mean": 0.3240761941831027,
+  "gap_median": 0.30412620306015015,
+  "sigma_be_from_mean": 0.3160194657019099,
+  "sigma_be_from_median": 0.29742563678829337
+ },
+ "win": {
+  "gap_mean": 0.27491453542773214,
+  "gap_median": 0.24982541054487228,
+  "sigma_be_from_mean": 0.26992256883565463,
+  "sigma_be_from_median": 0.2460538302655645
+ }
+}

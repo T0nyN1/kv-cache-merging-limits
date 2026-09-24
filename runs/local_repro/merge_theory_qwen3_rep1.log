@@ -1,0 +1,14 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  15%|█▍        | 46/311 [00:00<00:00, 438.31it/s]Loading weights:  44%|████▎     | 136/311 [00:00<00:00, 697.89it/s]Loading weights:  72%|███████▏  | 225/311 [00:00<00:00, 779.78it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 780.38it/s]
+
+96 (layer, head) samples over 3 documents, budget 0.15
+
+correlation( cosine distance , true sigma )   : 0.401
+                                                (1.0 would mean cosine is the right metric)
+
+mean sigma, routing by cosine                 : 1.485 nats
+mean sigma, routing by query-whitened distance : 1.275 nats
+  -> sigma reduced by 14.2%
+
+attainable squared-error reduction e^-sigma^2 :
+  cosine routing         : 0.2076  (merging can remove 20.8% of the error)
+  query-whitened routing : 0.2587  (merging can remove 25.9% of the error)

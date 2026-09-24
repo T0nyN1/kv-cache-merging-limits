@@ -1,0 +1,144 @@
+START Thu Sep  3 10:06:12 EDT 2026
+[10:06:12] start classa_oracle_qwen3
+[10:06:32] done classa_oracle_qwen3 exit=0
+[10:06:32] start cancel_qwen3
+[10:06:47] done cancel_qwen3 exit=0
+[10:06:47] start closed_qwen3
+[10:08:17] done closed_qwen3 exit=0
+[10:08:17] start merge_theory_qwen3
+[10:09:35] done merge_theory_qwen3 exit=0
+[10:09:35] start sigma_families_qwen3
+[10:09:53] done sigma_families_qwen3 exit=0
+[10:09:53] start classa_oracle_qwen3_p1024
+[10:10:12] done classa_oracle_qwen3_p1024 exit=0
+ALL DONE Thu Sep  3 10:10:12 EDT 2026
+SWEEP START Thu Sep  3 10:15:08 EDT 2026
+[10:15:08] start classa_oracle_qwen3_p128
+[10:15:25] done classa_oracle_qwen3_p128 exit=0
+[10:15:25] start classa_oracle_qwen3_p512
+[10:15:43] done classa_oracle_qwen3_p512 exit=0
+[10:15:43] start classa_oracle_qwen3_p2048
+[10:16:05] done classa_oracle_qwen3_p2048 exit=0
+[10:16:05] start classa_oracle_qwen3_pre3072_p2048
+[10:16:29] done classa_oracle_qwen3_pre3072_p2048 exit=0
+[10:16:29] start merge_theory_qwen3_rep1
+[10:17:47] done merge_theory_qwen3_rep1 exit=0
+[10:17:47] start merge_theory_qwen3_rep2
+[10:19:05] done merge_theory_qwen3_rep2 exit=0
+[10:19:05] start merge_theory_qwen3_rep3
+[10:20:23] done merge_theory_qwen3_rep3 exit=0
+SWEEP DONE Thu Sep  3 10:20:23 EDT 2026
+ROUND2 START Thu Sep  3 11:02:16 EDT 2026
+[11:02:16] start smoke_oracle
+[11:02:31] done smoke_oracle exit=0
+[11:02:31] start sigma_decode_qwen3
+[11:03:38] done sigma_decode_qwen3 exit=0
+[11:03:38] start oracle_p256_temporal
+[11:03:57] done oracle_p256_temporal exit=0
+[11:03:57] start oracle_p256_causal
+[11:04:14] done oracle_p256_causal exit=0
+[11:04:14] start oracle_p256_temporal_causal
+[11:04:31] done oracle_p256_temporal_causal exit=0
+[11:04:31] start oracle_p512_temporal_causal
+[11:04:50] done oracle_p512_temporal_causal exit=0
+[11:04:50] start oracle_p1024_temporal_causal
+[11:05:09] done oracle_p1024_temporal_causal exit=0
+[11:05:09] start oracle_p2048_temporal_causal
+[11:05:32] done oracle_p2048_temporal_causal exit=0
+[11:05:32] start oracle_pre3072_p2048_temporal_causal
+[11:05:57] done oracle_pre3072_p2048_temporal_causal exit=0
+ROUND2 DONE Thu Sep  3 11:05:57 EDT 2026
+ROUND3 START Thu Sep  3 11:07:37 EDT 2026
+[11:07:37] start smoke_oracle3
+[11:07:51] done smoke_oracle3 exit=0
+[11:07:51] start oracle_p256_prefixcache
+[11:08:12] done oracle_p256_prefixcache exit=0
+[11:08:12] start oracle_p512_prefixcache
+[11:08:34] done oracle_p512_prefixcache exit=0
+[11:08:34] start oracle_p1024_prefixcache
+[11:08:59] done oracle_p1024_prefixcache exit=0
+[11:08:59] start oracle_p2048_prefixcache
+[11:09:24] done oracle_p2048_prefixcache exit=0
+[11:09:24] start oracle_pre3072_p2048_prefixcache
+[11:09:49] done oracle_pre3072_p2048_prefixcache exit=0
+[11:09:49] start oracle_pre4096_p3072_prefixcache
+[11:10:31] done oracle_pre4096_p3072_prefixcache exit=0
+ROUND3 DONE Thu Sep  3 11:10:31 EDT 2026
+ROUND4 START Thu Sep  3 11:12:16 EDT 2026
+[11:12:16] start smoke_oracle4
+[11:12:30] done smoke_oracle4 exit=0
+[11:12:30] start oracle_h128_p256
+[11:12:50] done oracle_h128_p256 exit=0
+[11:12:50] start oracle_h128_p384
+[11:13:10] done oracle_h128_p384 exit=0
+[11:13:10] start oracle_h128_p640
+[11:13:32] done oracle_h128_p640 exit=0
+[11:13:32] start oracle_h128_p1152
+[11:13:55] done oracle_h128_p1152 exit=0
+[11:13:55] start oracle_h128_p2176
+[11:14:22] done oracle_h128_p2176 exit=0
+[11:14:22] start oracle_h64_p576
+[11:14:47] done oracle_h64_p576 exit=0
+[11:14:47] start oracle_h256_p768
+[11:15:10] done oracle_h256_p768 exit=0
+[11:15:10] start oracle_h512_p1024
+[11:15:32] done oracle_h512_p1024 exit=0
+[11:15:32] start oracle_h128_pre4096_p2176
+[11:16:05] done oracle_h128_pre4096_p2176 exit=0
+ROUND4 DONE Thu Sep  3 11:16:05 EDT 2026
+ROUND5 START Thu Sep  3 11:18:42 EDT 2026
+[11:18:42] start smoke_oracle5
+[11:18:53] done smoke_oracle5 exit=0
+[11:18:53] start oracle_orig_p256_robust
+[11:19:10] done oracle_orig_p256_robust exit=0
+[11:19:10] start oracle_dec_W128
+[11:19:30] done oracle_dec_W128 exit=0
+[11:19:30] start oracle_dec_W256
+[11:19:49] done oracle_dec_W256 exit=0
+[11:19:49] start oracle_dec_W512
+[11:20:09] done oracle_dec_W512 exit=0
+[11:20:09] start oracle_dec_W1024
+[11:20:29] done oracle_dec_W1024 exit=0
+[11:20:29] start oracle_dec_W2048
+[11:20:48] done oracle_dec_W2048 exit=0
+[11:20:48] start oracle_dec_W2048_pre4096
+[11:21:16] done oracle_dec_W2048_pre4096 exit=0
+[11:21:16] start oracle_dec_W512_h64
+[11:21:36] done oracle_dec_W512_h64 exit=0
+[11:21:36] start oracle_dec_W512_h256
+[11:21:57] done oracle_dec_W512_h256 exit=0
+ROUND5 DONE Thu Sep  3 11:21:57 EDT 2026
+ROUND6 START Fri Sep  4 05:51:25 EDT 2026
+[05:51:25] start centroid_gap_qwen3
+[05:51:48] done centroid_gap_qwen3 exit=0
+[05:51:48] start classa_oracle_decode_qwen3
+[05:53:26] done classa_oracle_decode_qwen3 exit=0
+[05:53:26] start centroid_gap_llama
+[05:54:05] done centroid_gap_llama exit=0
+ROUND6 DONE Fri Sep  4 05:54:05 EDT 2026
+ROUND7 START Fri Sep  4 05:56:02 EDT 2026
+[05:56:02] start sigma_thr_llama
+[05:57:16] done sigma_thr_llama exit=0
+[05:57:16] start sigma_thr_qwen3
+[05:57:41] done sigma_thr_qwen3 exit=0
+ROUND7 DONE Fri Sep  4 05:57:41 EDT 2026
+ROUND8 START Sat Sep  5 11:20:51 EDT 2026
+[11:20:51] start perhead_llama
+[11:23:36] done perhead_llama exit=0
+[11:23:36] start perhead_qwen3
+[11:24:22] done perhead_qwen3 exit=0
+[11:24:22] start nonrope_gpt2m
+[11:24:24] done nonrope_gpt2m exit=1
+[11:24:24] start drift_null_qwen3
+[11:26:33] done drift_null_qwen3 exit=0
+[11:26:33] start sigma_decode_v2
+[11:30:23] done sigma_decode_v2 exit=0
+[11:30:23] start oracle_decode_b005
+[11:33:04] done oracle_decode_b005 exit=0
+[11:33:05] start oracle_decode_b015
+[11:35:47] done oracle_decode_b015 exit=0
+[11:35:47] start oracle_selector_abs
+[11:36:34] done oracle_selector_abs exit=0
+ROUND8 DONE Sat Sep  5 11:36:34 EDT 2026
+[15:24:15] start nonrope_gpt2m (retry)
+[15:25:08] done nonrope_gpt2m exit=0

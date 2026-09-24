@@ -1,0 +1,9 @@
+Task,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext
+Model,name,alias,sample_len,"word_perplexity,none","word_perplexity_stderr,none","byte_perplexity,none","byte_perplexity_stderr,none","bits_per_byte,none","bits_per_byte_stderr,none"
+baseline,wikitext,wikitext,4,3.3071060389788527,N/A,1.2542169564868797,N/A,0.3267869294592083,N/A
+h2o,wikitext,wikitext,4,4.243195578272644,N/A,1.3148372694545052,N/A,0.394884255731608,N/A
+snapkv;observation_window=32;per_head=false;pool_kernel=7,wikitext,wikitext,4,4.456112604626406,N/A,1.327085169692685,N/A,0.4082609629841314,N/A
+pyramidkv;observation_window=32;per_head=false,wikitext,wikitext,4,4.299939963858373,N/A,1.318149287326122,N/A,0.3985137723856972,N/A
+otkv7;auto_threshold=0.9,wikitext,wikitext,4,4.419729373430996,N/A,1.3250263509995486,N/A,0.406021051055723,N/A
+otkv7,wikitext,wikitext,4,4.041296276357594,N/A,1.3027539583423433,N/A,0.38156463832132753,N/A
+otkv7;auto_regime=false,wikitext,wikitext,4,4.419729373430996,N/A,1.3250263509995486,N/A,0.406021051055723,N/A

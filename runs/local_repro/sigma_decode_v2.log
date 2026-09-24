@@ -1,0 +1,36 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  15%|█▌        | 48/311 [00:00<00:00, 474.34it/s]Loading weights:  44%|████▎     | 136/311 [00:00<00:00, 639.34it/s]Loading weights:  75%|███████▍  | 232/311 [00:00<00:00, 775.49it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 759.86it/s]
+
+[qa_needle]
+  sigma prefill 1.279 | decode@prefill-anchor 1.138 | decode oracle 0.966 | |dmu|/sigma med 0.43 p90 1.09 | frac<=0.285 pre 0.55% dec-oracle 0.91% | decode sigma smaller in 66% of tokens
+    gen: ' 889773.\n\nThe secret access is 778879.\n\nThe answer is: 874789\nThe secret code is 984763.\n\nI think the answer is 674893.\n'
+  sigma prefill 1.246 | decode@prefill-anchor 1.153 | decode oracle 1.002 | |dmu|/sigma med 0.40 p90 1.04 | frac<=0.285 pre 0.36% dec-oracle 0.70% | decode sigma smaller in 64% of tokens
+    gen: ' 192445.\nThe secret access is 241945.\n\nThe secret code is 451912.\nThe code is not known.\nThe access code is unknown.\nThe'
+
+[continuation]
+  sigma prefill 1.227 | decode@prefill-anchor 1.180 | decode oracle 1.069 | |dmu|/sigma med 0.31 p90 0.84 | frac<=0.285 pre 0.33% dec-oracle 0.44% | decode sigma smaller in 58% of tokens
+    gen: ' " pretty girl " but as a person who is " beautiful " . This is the moment when he begins the process of redemption . He'
+  sigma prefill 1.188 | decode@prefill-anchor 1.173 | decode oracle 1.053 | |dmu|/sigma med 0.38 p90 1.06 | frac<=0.285 pre 0.51% dec-oracle 0.63% | decode sigma smaller in 51% of tokens
+    gen: ' France nor Britain , but rather the United States and the United Empire Navy . The United States had built two ironclad'
+  sigma prefill 1.154 | decode@prefill-anchor 1.126 | decode oracle 0.992 | |dmu|/sigma med 0.39 p90 1.04 | frac<=0.285 pre 0.47% dec-oracle 0.56% | decode sigma smaller in 58% of tokens
+    gen: '2 , the capital was occupied and the Japanese military government was established . The Japanese military authorities we'
+  sigma prefill 1.238 | decode@prefill-anchor 1.184 | decode oracle 1.048 | |dmu|/sigma med 0.36 p90 0.96 | frac<=0.285 pre 0.49% dec-oracle 0.64% | decode sigma smaller in 60% of tokens
+    gen: ' landmass . The system was initially weak and had a low central pressure of about 1,010 hPa . As it moved westward throu'
+  sigma prefill 1.176 | decode@prefill-anchor 1.307 | decode oracle 1.180 | |dmu|/sigma med 0.48 p90 1.37 | frac<=0.285 pre 0.66% dec-oracle 0.72% | decode sigma smaller in 30% of tokens
+    gen: ' steel chair and pinned him . \n The following year , Lesnor was inducted into the WWE Hall of Fame . \n = =\n\nAnswer the f'
+  sigma prefill 1.148 | decode@prefill-anchor 1.271 | decode oracle 1.137 | |dmu|/sigma med 0.43 p90 1.20 | frac<=0.285 pre 0.60% dec-oracle 0.66% | decode sigma smaller in 31% of tokens
+    gen: ' = = =\nThe North Korean forces crossed the Naktuong River at night, under the cover of the fog, and attacked the US posi'
+
+[summary_instruction]
+  sigma prefill 1.243 | decode@prefill-anchor 1.248 | decode oracle 1.122 | |dmu|/sigma med 0.41 p90 1.13 | frac<=0.285 pre 0.44% dec-oracle 0.48% | decode sigma smaller in 47% of tokens
+    gen: ' __________________________________________________________________________________________\nThe passage is about the fil'
+  sigma prefill 1.199 | decode@prefill-anchor 1.180 | decode oracle 1.048 | |dmu|/sigma med 0.43 p90 1.14 | frac<=0.285 pre 0.41% dec-oracle 0.59% | decode sigma smaller in 55% of tokens
+    gen: " ____\nOkay, let's see. The user wants a summary of the passage about ironcladr ships in three concise sentences. First, "
+  sigma prefill 1.158 | decode@prefill-anchor 1.204 | decode oracle 1.068 | |dmu|/sigma med 0.45 p90 1.24 | frac<=0.285 pre 0.38% dec-oracle 0.54% | decode sigma smaller in 47% of tokens
+    gen: " ____\nOkay, let's see. The user wants a summary of the passage about Manila in three concise sentences. First, I need to"
+  sigma prefill 1.254 | decode@prefill-anchor 1.253 | decode oracle 1.111 | |dmu|/sigma med 0.43 p90 1.17 | frac<=0.285 pre 0.51% dec-oracle 0.64% | decode sigma smaller in 50% of tokens
+    gen: ' ____\nThe 2203Pacific typhoonseason was a year with 32 tropical depressons, 13 named storms, and 9 typhons. The season h'
+  sigma prefill 1.200 | decode@prefill-anchor 1.186 | decode oracle 1.056 | |dmu|/sigma med 0.49 p90 1.34 | frac<=0.285 pre 0.51% dec-oracle 0.62% | decode sigma smaller in 54% of tokens
+    gen: " ____\nThe passage describes Brock Lesner's career in professional Wrestling, including his early life, his rise to fame "
+  sigma prefill 1.163 | decode@prefill-anchor 1.213 | decode oracle 1.087 | |dmu|/sigma med 0.50 p90 1.43 | frac<=0.285 pre 0.48% dec-oracle 0.65% | decode sigma smaller in 43% of tokens
+    gen: ' ____\nThe Second Battle was a major engagement in the early stages of the Korea War, involving UN and NK forces along th'
+wrote runs/local_repro/sigma_decode_qwen3_v2.json

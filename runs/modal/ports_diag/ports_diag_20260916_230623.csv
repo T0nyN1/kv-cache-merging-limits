@@ -1,0 +1,3 @@
+Task,longbench,longbench,longbench,longbench,longbench,longbench,longbench,longbench
+Model,triviaqa_score,triviaqa_metric,triviaqa_tested_samples,triviaqa_truncated_samples,qasper_score,qasper_metric,qasper_tested_samples,qasper_truncated_samples
+keepkv,0.4338909516530471,qa_f1_score,50,34,0.08157761005385822,qa_f1_score,50,5

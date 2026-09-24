@@ -1,0 +1,12 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<00:38,  7.96it/s]Loading weights:  37%|███▋      | 114/311 [00:00<00:00, 589.03it/s]Loading weights:  68%|██████▊   | 213/311 [00:00<00:00, 739.53it/s]Loading weights:  97%|█████████▋| 301/311 [00:00<00:00, 786.74it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 708.25it/s]
+
+[qa_needle]  (median over heads; fraction of squared eviction error removed)
+  decode_fit    lam=0.001: in 0.857 out 0.593  lam=0.1: in 0.561 out 0.449  lam=1: in 0.381 out 0.338
+  prefill_128   lam=0.001: in 0.917 out 0.192  lam=0.1: in 0.622 out 0.134  lam=1: in 0.408 out 0.062
+  prefill_512   lam=0.001: in 0.658 out -2.474  lam=0.1: in 0.479 out -0.435  lam=1: in 0.333 out -0.722
+
+[continuation]  (median over heads; fraction of squared eviction error removed)
+  decode_fit    lam=0.001: in 0.888 out 0.433  lam=0.1: in 0.579 out 0.347  lam=1: in 0.384 out 0.283
+  prefill_128   lam=0.001: in 0.918 out 0.245  lam=0.1: in 0.650 out 0.221  lam=1: in 0.435 out 0.199
+  prefill_512   lam=0.001: in 0.593 out -0.462  lam=0.1: in 0.427 out 0.104  lam=1: in 0.306 out 0.121
+wrote runs/local_repro/classa_oracle_decode_qwen3.json

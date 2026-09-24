@@ -1,0 +1,6 @@
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 5157.96it/s]
+
+models/Llama-3.1-8B-Instruct: 112 (layer, head) samples, budget 0.15, prefill 2500
+  selector=full |v_A - v_E|/mean||v||: mean 0.3241  median 0.3041  -> break-even sigma 0.316 (mean) / 0.297 (median)
+  selector=win  |v_A - v_E|/mean||v||: mean 0.2749  median 0.2498  -> break-even sigma 0.270 (mean) / 0.246 (median)
+wrote runs/local_repro/centroid_gap_llama.json

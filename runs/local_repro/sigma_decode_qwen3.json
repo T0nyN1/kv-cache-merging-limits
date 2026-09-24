@@ -1,0 +1,93 @@
+{
+ "model": "Qwen/Qwen3-1.7B",
+ "context": 2500,
+ "probe": 128,
+ "new_tokens": 64,
+ "budget": 0.15,
+ "kinds": {
+  "qa_needle": [
+   {
+    "n_tokens": 10752,
+    "sigma_prefill_median": 1.2823013067245483,
+    "sigma_decode_at_prefill_anchor_median": 1.244037389755249,
+    "sigma_decode_oracle_median": 1.0967676639556885,
+    "mu_shift_over_sigma_median": 0.39895984530448914,
+    "mu_shift_over_sigma_p90": 0.98451828956604,
+    "frac_le_0.285_prefill": 0.005115327425301075,
+    "frac_le_0.285_decode_oracle": 0.0068824402987957,
+    "frac_decode_sigma_smaller_than_prefill": 0.558965802192688,
+    "ratio_decode_over_prefill_median": 0.9749593734741211,
+    "generated": " 894772.\n\nThe user is asking about the secret access code for the quartz vault. In the provided text, it is mentioned th"
+   },
+   {
+    "n_tokens": 10752,
+    "sigma_prefill_median": 1.2175599336624146,
+    "sigma_decode_at_prefill_anchor_median": 1.1342649459838867,
+    "sigma_decode_oracle_median": 0.9370596408843994,
+    "mu_shift_over_sigma_median": 0.46267154812812805,
+    "mu_shift_over_sigma_p90": 1.1860071420669556,
+    "frac_le_0.285_prefill": 0.0050223213620483875,
+    "frac_le_0.285_decode_oracle": 0.0068824402987957,
+    "frac_decode_sigma_smaller_than_prefill": 0.6190476417541504,
+    "ratio_decode_over_prefill_median": 0.9419721364974976,
+    "generated": " 371493.\n\nThe answer is correct.\nThe answer is correct.\nThe answer is correct.\nThe answer is correct.\nThe answer is corr"
+   }
+  ],
+  "continuation": [
+   {
+    "n_tokens": 10752,
+    "sigma_prefill_median": 1.227054476737976,
+    "sigma_decode_at_prefill_anchor_median": 1.2077351808547974,
+    "sigma_decode_oracle_median": 1.0844295024871826,
+    "mu_shift_over_sigma_median": 0.3467160165309906,
+    "mu_shift_over_sigma_p90": 0.9420240521430969,
+    "frac_le_0.285_prefill": 0.0032552082557231188,
+    "frac_le_0.285_decode_oracle": 0.004092262126505375,
+    "frac_decode_sigma_smaller_than_prefill": 0.5338541865348816,
+    "ratio_decode_over_prefill_median": 0.9882562160491943,
+    "generated": " \" pretty girl \" but as a \" beautiful woman \" . He then begins to see the world in a new way and is able to see the beau"
+   },
+   {
+    "n_tokens": 10752,
+    "sigma_prefill_median": 1.1877648830413818,
+    "sigma_decode_at_prefill_anchor_median": 1.1644560098648071,
+    "sigma_decode_oracle_median": 1.044661045074463,
+    "mu_shift_over_sigma_median": 0.36503130197525024,
+    "mu_shift_over_sigma_p90": 1.017442226409912,
+    "frac_le_0.285_prefill": 0.005115327425301075,
+    "frac_le_0.285_decode_oracle": 0.00632440485060215,
+    "frac_decode_sigma_smaller_than_prefill": 0.5435267686843872,
+    "ratio_decode_over_prefill_median": 0.9841927886009216,
+    "generated": " France nor Britain , but rather the United States and the United Kingdom . The US Navy had already begun to build ironc"
+   }
+  ],
+  "summary_instruction": [
+   {
+    "n_tokens": 10752,
+    "sigma_prefill_median": 1.2371790409088135,
+    "sigma_decode_at_prefill_anchor_median": 1.294980764389038,
+    "sigma_decode_oracle_median": 1.1593502759933472,
+    "mu_shift_over_sigma_median": 0.4402071237564087,
+    "mu_shift_over_sigma_p90": 1.1982753276824951,
+    "frac_le_0.285_prefill": 0.00437127985060215,
+    "frac_le_0.285_decode_oracle": 0.0042782737873494625,
+    "frac_decode_sigma_smaller_than_prefill": 0.4090401828289032,
+    "ratio_decode_over_prefill_median": 1.0378077030181885,
+    "generated": " __________________________________________________________________________________________\nThe passage is about the fil"
+   },
+   {
+    "n_tokens": 10752,
+    "sigma_prefill_median": 1.2044298648834229,
+    "sigma_decode_at_prefill_anchor_median": 1.194647192955017,
+    "sigma_decode_oracle_median": 1.0535647869110107,
+    "mu_shift_over_sigma_median": 0.41140052676200867,
+    "mu_shift_over_sigma_p90": 1.1318331956863403,
+    "frac_le_0.285_prefill": 0.0045572915114462376,
+    "frac_le_0.285_decode_oracle": 0.0059523810632526875,
+    "frac_decode_sigma_smaller_than_prefill": 0.5279017686843872,
+    "ratio_decode_over_prefill_median": 0.9872722029685974,
+    "generated": " ____\nOkay, let's see. The user wants a summary of the passage about ironclad warships in three sentences. First, I need"
+   }
+  ]
+ }
+}

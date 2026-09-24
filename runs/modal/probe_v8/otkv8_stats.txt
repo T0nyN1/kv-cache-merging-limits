@@ -1,0 +1,2 @@
+[otkv8] prefill merge: heads 256 applied 227 pairs proposed 45413 applied 40379 mean gamma 0.61 mean select gain 0.296 | candidates 424584 edges_neg 269614 | seconds: layer 5.99 setup 0.04 cand 0.01 fit 4.45 cost 0.09 match 0.66 gamma 0.72 write 0.00
+[otkv8] prefill merge: heads 256 applied 236 pairs proposed 44319 applied 40561 mean gamma 0.67 mean select gain 0.289 | candidates 411584 edges_neg 266329 | seconds: layer 5.33 setup 0.03 cand 0.02 fit 3.97 cost 0.08 match 0.60 gamma 0.62 write 0.00

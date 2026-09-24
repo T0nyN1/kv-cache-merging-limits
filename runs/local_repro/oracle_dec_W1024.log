@@ -1,0 +1,11 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 81/311 [00:00<00:00, 762.86it/s]Loading weights:  57%|█████▋    | 177/311 [00:00<00:00, 843.77it/s]Loading weights:  86%|████████▌ | 268/311 [00:00<00:00, 853.66it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 873.04it/s]
+
+jointly-optimal class-A merge, budget 0.15, 112 heads   (fraction of squared eviction error removed)
+  lambda    in-sample     held-out  finite heads
+   1e-06        0.556       -1.256    112/112   
+   0.001        0.532       -0.269    112/112   
+     0.1        0.428        0.107    112/112   
+       1        0.337        0.063    112/112   
+
+logit-gap Gaussianity: median |skew| 0.163, median excess kurtosis 0.020
+wrote runs/local_repro/oracle_dec_W1024.json

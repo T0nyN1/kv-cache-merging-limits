@@ -1,0 +1,12 @@
+relative centroid gap (bias merging can remove) : 0.2914
+=> merging helps only where CV < 0.2914, i.e. sigma < 0.2855
+
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<00:34,  9.09it/s]Loading weights:  40%|████      | 125/311 [00:00<00:00, 675.53it/s]Loading weights:  70%|███████   | 218/311 [00:00<00:00, 781.02it/s]Loading weights:  99%|█████████▊| 307/311 [00:00<00:00, 821.83it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 740.74it/s]
+sigma to the best anchor found by the whitened metric : 1.211
+sigma to the *oracle* best anchor (lower bound)       : n/a per-token, see below
+
+fraction of evicted tokens with sigma <= 0.285:
+  routed by the query-whitened metric : 0.06 %
+  routed by an oracle (min over all anchors) : 0.06 %
+
+sigma reduction still required to break even: 4.2x

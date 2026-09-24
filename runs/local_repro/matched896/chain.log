@@ -1,0 +1,2 @@
+bash: line 1: 24844 Bus error: 10           <venv>/bin/python experiments/v8_offline.py --model gpt2-medium --device cpu --dtype float32 --prompts 3 --context 896 --window 32 --budget 0.15 0.25 --layer-stride 4 --seed 0 --out-dir runs/local_repro/matched896 --tag m896 > runs/local_repro/matched896/gpt2.log 2>&1
+ALL_MATCHED_DONE

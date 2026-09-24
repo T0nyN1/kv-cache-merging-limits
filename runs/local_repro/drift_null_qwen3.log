@@ -1,0 +1,50 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 56/311 [00:00<00:00, 534.93it/s]Loading weights:  40%|███▉      | 123/311 [00:00<00:00, 612.84it/s]Loading weights:  60%|██████    | 188/311 [00:00<00:00, 604.57it/s]Loading weights:  81%|████████  | 252/311 [00:00<00:00, 616.26it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 630.73it/s]
+[qa_needle] gen=' 894772.\n\nThe user is asking about the secret access code for the quartz vault. In the provided text' distinct=35
+    shift_decode                 median 0.402  p90 1.005
+    shift_nullA_prefill64        median 0.356  p90 0.985
+    shift_nullB_calhalves        median 0.284  p90 0.731
+    shift_decode_randanchor      median 0.508  p90 1.250
+    shift_nullA_randanchor       median 0.409  p90 1.134
+    sigma_ratio_decode           median 0.973  p90 1.219
+    sigma_ratio_nullA            median 0.966  p90 1.182
+[qa_needle] gen=' 371493.\n\nThe answer is correct.\nThe answer is correct.\nThe answer is correct.\nThe answer is correct' distinct=12
+    shift_decode                 median 0.469  p90 1.222
+    shift_nullA_prefill64        median 0.399  p90 1.129
+    shift_nullB_calhalves        median 0.281  p90 0.728
+    shift_decode_randanchor      median 0.570  p90 1.419
+    shift_nullA_randanchor       median 0.442  p90 1.242
+    sigma_ratio_decode           median 0.940  p90 1.219
+    sigma_ratio_nullA            median 0.981  p90 1.232
+[continuation] gen=' " pretty girl " but as a " beautiful woman " . He then begins to see the world in a new way and is ' distinct=36
+    shift_decode                 median 0.348  p90 0.926
+    shift_nullA_prefill64        median 0.305  p90 0.846
+    shift_nullB_calhalves        median 0.246  p90 0.640
+    shift_decode_randanchor      median 0.398  p90 1.049
+    shift_nullA_randanchor       median 0.329  p90 0.952
+    sigma_ratio_decode           median 0.987  p90 1.219
+    sigma_ratio_nullA            median 0.998  p90 1.204
+[continuation] gen=' France nor Britain , but rather the United States and the United Kingdom . The US Navy had already ' distinct=40
+    shift_decode                 median 0.373  p90 1.016
+    shift_nullA_prefill64        median 0.333  p90 0.873
+    shift_nullB_calhalves        median 0.328  p90 0.881
+    shift_decode_randanchor      median 0.416  p90 1.067
+    shift_nullA_randanchor       median 0.377  p90 0.957
+    sigma_ratio_decode           median 0.982  p90 1.199
+    sigma_ratio_nullA            median 1.040  p90 1.297
+[summary_instruction] gen=' __________________________________________________________________________________________\nThe pass' distinct=55
+    shift_decode                 median 0.445  p90 1.213
+    shift_nullA_prefill64        median 0.311  p90 0.879
+    shift_nullB_calhalves        median 0.244  p90 0.650
+    shift_decode_randanchor      median 0.567  p90 1.420
+    shift_nullA_randanchor       median 0.344  p90 0.970
+    sigma_ratio_decode           median 1.041  p90 1.341
+    sigma_ratio_nullA            median 1.012  p90 1.234
+[summary_instruction] gen=" ____\nOkay, let's see. The user wants a summary of the passage about ironclad warships in three sent" distinct=51
+    shift_decode                 median 0.427  p90 1.141
+    shift_nullA_prefill64        median 0.370  p90 0.995
+    shift_nullB_calhalves        median 0.287  p90 0.736
+    shift_decode_randanchor      median 0.526  p90 1.366
+    shift_nullA_randanchor       median 0.427  p90 1.121
+    sigma_ratio_decode           median 0.986  p90 1.254
+    sigma_ratio_nullA            median 1.006  p90 1.231
+wrote runs/local_repro/sigma_drift_null_qwen3.json

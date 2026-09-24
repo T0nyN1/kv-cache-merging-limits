@@ -1,0 +1,11 @@
+torch
+transformers
+accelerate
+tokenizers
+datasets
+lm-eval
+numpy
+scipy
+tqdm
+sentencepiece
+protobuf

@@ -1,0 +1,1 @@
+{"task": "niah_multiquery", "method": "snapkv;observation_window=32;per_head=false;pool_kernel=7", "scores": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.75, 0.75, 1.0, 1.0, 0.75, 1.0, 1.0, 1.0, 1.0, 0.75, 1.0, 0.75, 1.0, 1.0, 1.0, 1.0, 0.75, 1.0]}

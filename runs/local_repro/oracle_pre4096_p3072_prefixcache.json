@@ -1,0 +1,29 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "budget": 0.15,
+  "heads": 112,
+  "gaussian_median_abs_skew": 0.11077296733856201,
+  "gaussian_median_excess_kurtosis": 0.08307909965515137,
+  "removal": {
+    "1e-06": {
+      "in_median": 0.5797365670512898,
+      "out_median": -2.2694740768714747,
+      "out_mean": NaN
+    },
+    "0.001": {
+      "in_median": 0.5758934578351398,
+      "out_median": -1.6026234575713594,
+      "out_mean": NaN
+    },
+    "0.1": {
+      "in_median": 0.5189385653225702,
+      "out_median": -1.9477095401360816,
+      "out_mean": NaN
+    },
+    "1.0": {
+      "in_median": 0.3788669477640876,
+      "out_median": -2.638980330412053,
+      "out_mean": NaN
+    }
+  }
+}

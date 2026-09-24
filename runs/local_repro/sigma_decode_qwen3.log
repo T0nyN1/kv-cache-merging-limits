@@ -1,0 +1,20 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<00:33,  9.28it/s]Loading weights:  37%|███▋      | 115/311 [00:00<00:00, 652.47it/s]Loading weights:  63%|██████▎   | 197/311 [00:00<00:00, 710.52it/s]Loading weights:  93%|█████████▎| 289/311 [00:00<00:00, 767.62it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 712.19it/s]
+
+[qa_needle]
+  sigma prefill 1.282 | decode@prefill-anchor 1.244 | decode oracle 1.097 | |dmu|/sigma med 0.40 p90 0.98 | frac<=0.285 pre 0.51% dec-oracle 0.69% | decode sigma smaller in 56% of tokens
+    gen: ' 894772.\n\nThe user is asking about the secret access code for the quartz vault. In the provided text, it is mentioned th'
+  sigma prefill 1.218 | decode@prefill-anchor 1.134 | decode oracle 0.937 | |dmu|/sigma med 0.46 p90 1.19 | frac<=0.285 pre 0.50% dec-oracle 0.69% | decode sigma smaller in 62% of tokens
+    gen: ' 371493.\n\nThe answer is correct.\nThe answer is correct.\nThe answer is correct.\nThe answer is correct.\nThe answer is corr'
+
+[continuation]
+  sigma prefill 1.227 | decode@prefill-anchor 1.208 | decode oracle 1.084 | |dmu|/sigma med 0.35 p90 0.94 | frac<=0.285 pre 0.33% dec-oracle 0.41% | decode sigma smaller in 53% of tokens
+    gen: ' " pretty girl " but as a " beautiful woman " . He then begins to see the world in a new way and is able to see the beau'
+  sigma prefill 1.188 | decode@prefill-anchor 1.164 | decode oracle 1.045 | |dmu|/sigma med 0.37 p90 1.02 | frac<=0.285 pre 0.51% dec-oracle 0.63% | decode sigma smaller in 54% of tokens
+    gen: ' France nor Britain , but rather the United States and the United Kingdom . The US Navy had already begun to build ironc'
+
+[summary_instruction]
+  sigma prefill 1.237 | decode@prefill-anchor 1.295 | decode oracle 1.159 | |dmu|/sigma med 0.44 p90 1.20 | frac<=0.285 pre 0.44% dec-oracle 0.43% | decode sigma smaller in 41% of tokens
+    gen: ' __________________________________________________________________________________________\nThe passage is about the fil'
+  sigma prefill 1.204 | decode@prefill-anchor 1.195 | decode oracle 1.054 | |dmu|/sigma med 0.41 p90 1.13 | frac<=0.285 pre 0.46% dec-oracle 0.60% | decode sigma smaller in 53% of tokens
+    gen: " ____\nOkay, let's see. The user wants a summary of the passage about ironclad warships in three sentences. First, I need"
+wrote runs/local_repro/sigma_decode_qwen3.json

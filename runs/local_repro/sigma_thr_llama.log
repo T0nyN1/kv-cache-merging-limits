@@ -1,0 +1,23 @@
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 8990.64it/s]
+{
+  "model": "models/Llama-3.1-8B-Instruct",
+  "oracle_median_sigma": 0.9780996260233223,
+  "oracle_frac_le_0.285": 0.003906250007275958,
+  "oracle_frac_le_0.9": 0.44192165874361916,
+  "repeat8x_median_sigma": 0.9006645688787103,
+  "repeat8x_frac_le_0.285": 0.0032552082629990764,
+  "same_token_by_distance": {
+    "0-8": 1.0602236986160278,
+    "8-64": 1.4051854213078816,
+    "64-512": 1.5462874571482341,
+    "512-100000": 1.5562994480133057
+  },
+  "oracle_frac_le_0.25": 0.002061631964655438,
+  "repeat8x_frac_le_0.25": 0.0011393229287932627,
+  "oracle_frac_le_0.3": 0.0051540798182638055,
+  "repeat8x_frac_le_0.3": 0.0043131511338287964,
+  "oracle_frac_le_0.316": 0.006401909799023997,
+  "repeat8x_frac_le_0.316": 0.005940755298070144,
+  "repeat8x_frac_le_0.9": 0.5671386738467845
+}
+wrote runs/local_repro/sigma_thr_llama.json

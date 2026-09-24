@@ -1,0 +1,4 @@
+Task,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext
+Model,alias,"word_perplexity,none","word_perplexity_stderr,none","byte_perplexity,none","byte_perplexity_stderr,none","bits_per_byte,none","bits_per_byte_stderr,none"
+otkv8;observation_window=32;per_head=false;pool_kernel=7,wikitext,11.462724468726915,N/A,1.60068514892529,N/A,0.6786895609743623,N/A
+snapkv;observation_window=32;per_head=false;pool_kernel=7,wikitext,11.387976626567536,N/A,1.5986666451410183,N/A,0.676869138605451,N/A

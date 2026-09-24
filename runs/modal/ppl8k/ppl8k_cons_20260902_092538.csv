@@ -1,0 +1,3 @@
+Task,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext,wikitext
+Model,name,alias,sample_len,"word_perplexity,none","word_perplexity_stderr,none","byte_perplexity,none","byte_perplexity_stderr,none","bits_per_byte,none","bits_per_byte_stderr,none"
+otkv7;consolidate=true,wikitext,wikitext,6,4.4193172487679195,N/A,1.3237537081582247,N/A,0.40463472556528957,N/A

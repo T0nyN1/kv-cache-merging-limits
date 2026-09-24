@@ -1,0 +1,6 @@
+Task,niah
+Model,overall_accuracy
+otkv7;regime_scope=global,0.56
+otkv7;auto_threshold=0.85,1.0
+otkv7;regime_scope=global;auto_threshold=0.85,1.0
+otkv7;regime_scope=global;auto_threshold=0.9,1.0

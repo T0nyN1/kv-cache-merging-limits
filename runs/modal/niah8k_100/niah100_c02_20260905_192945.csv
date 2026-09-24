@@ -1,0 +1,5 @@
+Task,niah
+Model,overall_accuracy
+otkv7;auto_regime=false,0.9
+snapkv;observation_window=32;per_head=false;pool_kernel=7,0.78
+pyramidkv;observation_window=32;per_head=false,0.48

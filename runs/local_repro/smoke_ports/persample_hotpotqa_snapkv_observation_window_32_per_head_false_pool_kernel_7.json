@@ -1,0 +1,1 @@
+{"task": "hotpotqa", "method": "snapkv;observation_window=32;per_head=false;pool_kernel=7", "offset": 0, "scores": [0.1276595744680851, 0.0]}

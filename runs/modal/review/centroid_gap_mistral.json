@@ -1,0 +1,19 @@
+{
+ "model": "mistralai/Mistral-7B-Instruct-v0.3",
+ "budget": 0.15,
+ "prefill": 2500,
+ "docs": 3,
+ "samples": 168,
+ "full": {
+  "gap_mean": 0.2799816135583179,
+  "gap_median": 0.25672847032546997,
+  "sigma_be_from_mean": 0.27471605993887344,
+  "sigma_be_from_median": 0.25264289489833996
+ },
+ "win": {
+  "gap_mean": 0.2773003305885054,
+  "gap_median": 0.2608327269554138,
+  "sigma_be_from_mean": 0.2721807119007907,
+  "sigma_be_from_median": 0.25655273350495
+ }
+}

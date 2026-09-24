@@ -1,0 +1,28 @@
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+*.iml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# models, datasets and weights are downloaded, never committed
+/models/
+/datasets/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.gguf
+
+# scratch output of new runs (the released results live in runs/)
+results/
+outputs/
+paper/figures/*.png
+paper/figures/*.pdf

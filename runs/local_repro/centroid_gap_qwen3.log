@@ -1,0 +1,6 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<03:27,  1.49it/s]Loading weights:  40%|████      | 125/311 [00:00<00:00, 213.33it/s]Loading weights:  61%|██████    | 189/311 [00:01<00:00, 232.88it/s]Loading weights:  76%|███████▌  | 236/311 [00:01<00:00, 224.48it/s]Loading weights:  88%|████████▊ | 273/311 [00:01<00:00, 235.02it/s]Loading weights:  99%|█████████▊| 307/311 [00:01<00:00, 237.72it/s]Loading weights: 100%|██████████| 311/311 [00:01<00:00, 203.34it/s]
+
+Qwen/Qwen3-1.7B: 144 (layer, head) samples, budget 0.15, prefill 3000
+  selector=full |v_A - v_E|/mean||v||: mean 0.2914  median 0.2819  -> break-even sigma 0.285 (mean) / 0.277 (median)
+  selector=win  |v_A - v_E|/mean||v||: mean 0.2471  median 0.2401  -> break-even sigma 0.243 (mean) / 0.237 (median)
+wrote runs/local_repro/centroid_gap_qwen3.json

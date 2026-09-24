@@ -1,0 +1,4 @@
+Task,retrieval,retrieval,retrieval,retrieval,retrieval,retrieval,retrieval,retrieval
+Model,niah_single_score,niah_single_samples,niah_multikey_score,niah_multikey_samples,niah_multiquery_score,niah_multiquery_samples,vt_score,vt_samples
+snapkv;observation_window=32;per_head=false;pool_kernel=7,1.0,25,0.96,25,0.42,25,0.31,25
+otkv7,1.0,25,1.0,25,0.63,25,0.32,25

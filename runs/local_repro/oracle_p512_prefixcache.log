@@ -1,0 +1,11 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   1%|          | 3/311 [00:00<00:10, 29.96it/s]Loading weights:  39%|███▉      | 122/311 [00:00<00:00, 711.74it/s]Loading weights:  68%|██████▊   | 213/311 [00:00<00:00, 795.10it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 776.72it/s]
+
+jointly-optimal class-A merge, budget 0.15, 112 heads   (fraction of squared eviction error removed)
+  lambda    in-sample     held-out
+   1e-06        0.910        0.014
+   0.001        0.852        0.295
+     0.1        0.630        0.268
+       1        0.430        0.230
+
+logit-gap Gaussianity: median |skew| 0.142, median excess kurtosis 0.041
+wrote runs/local_repro/oracle_p512_prefixcache.json

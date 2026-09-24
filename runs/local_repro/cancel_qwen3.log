@@ -1,0 +1,9 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 37/311 [00:00<00:00, 342.90it/s]Loading weights:  40%|████      | 125/311 [00:00<00:00, 648.80it/s]Loading weights:  70%|██████▉   | 217/311 [00:00<00:00, 770.26it/s]Loading weights:  97%|█████████▋| 302/311 [00:00<00:00, 795.84it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 758.29it/s]
+
+144 (layer, head) samples, budget 0.15
+
+|v_A - v_E| / mean||v||   (the bias merging removes)  : 0.2914
+evicted tokens per head n                              : 2550
+  sigma=1.0   CV= 1.31  merge helps only if gap > CV/sqrt(n) = 0.0260   -> HELPS
+  sigma=1.21  CV= 1.82  merge helps only if gap > CV/sqrt(n) = 0.0361   -> HELPS
+  sigma=1.5   CV= 2.91  merge helps only if gap > CV/sqrt(n) = 0.0577   -> HELPS

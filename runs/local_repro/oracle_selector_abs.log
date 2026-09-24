@@ -1,0 +1,74 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<00:44,  7.01it/s]Loading weights:  37%|███▋      | 114/311 [00:00<00:00, 568.12it/s]Loading weights:  65%|██████▍   | 202/311 [00:00<00:00, 685.53it/s]Loading weights:  93%|█████████▎| 290/311 [00:00<00:00, 746.10it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 666.91it/s]
+heads=112
+W1024_h2o_anchor_frac_fitwin       median    0.8997
+W1024_h2o_anchor_frac_last128      median    0.0604
+W1024_h2o_anchor_med_pos           median 1777.5000
+W1024_h2o_evict                    median    0.1937
+W1024_h2o_merged_l0.001            median    0.1147
+W1024_h2o_merged_l0.1              median    0.1245
+W1024_h2o_merged_l1                median    0.1358
+W1024_h2o_removed_l0.001           median    0.4026
+W1024_h2o_removed_l0.1             median    0.3905
+W1024_h2o_removed_l1               median    0.2993
+W1024_snap_anchor_frac_fitwin      median    0.8585
+W1024_snap_anchor_frac_last128     median    0.3379
+W1024_snap_anchor_med_pos          median 2212.0000
+W1024_snap_evict                   median    0.1134
+W1024_snap_merged_l0.001           median    0.2027
+W1024_snap_merged_l0.1             median    0.1637
+W1024_snap_merged_l1               median    0.1923
+W1024_snap_removed_l0.001          median   -0.2689
+W1024_snap_removed_l0.1            median    0.1069
+W1024_snap_removed_l1              median    0.0629
+W128_h2o_anchor_frac_fitwin        median    0.3379
+W128_h2o_anchor_frac_last128       median    0.3379
+W128_h2o_anchor_med_pos            median 2212.0000
+W128_h2o_evict                     median    0.1134
+W128_h2o_merged_l0.001             median    0.0648
+W128_h2o_merged_l0.1               median    0.0774
+W128_h2o_merged_l1                 median    0.0856
+W128_h2o_removed_l0.001            median    0.2788
+W128_h2o_removed_l0.1              median    0.2444
+W128_h2o_removed_l1                median    0.2076
+W128_snap_anchor_frac_fitwin       median    0.3379
+W128_snap_anchor_frac_last128      median    0.3379
+W128_snap_anchor_med_pos           median 2212.0000
+W128_snap_evict                    median    0.1134
+W128_snap_merged_l0.001            median    0.0648
+W128_snap_merged_l0.1              median    0.0774
+W128_snap_merged_l1                median    0.0856
+W128_snap_removed_l0.001           median    0.2788
+W128_snap_removed_l0.1             median    0.2444
+W128_snap_removed_l1               median    0.2076
+W2048_h2o_anchor_frac_fitwin       median    0.9162
+W2048_h2o_anchor_frac_last128      median    0.0151
+W2048_h2o_anchor_med_pos           median 1050.0000
+W2048_h2o_evict                    median    0.2673
+W2048_h2o_merged_l0.001            median    0.1962
+W2048_h2o_merged_l0.1              median    0.1874
+W2048_h2o_merged_l1                median    0.2049
+W2048_h2o_removed_l0.001           median    0.3433
+W2048_h2o_removed_l0.1             median    0.3624
+W2048_h2o_removed_l1               median    0.3023
+W2048_snap_anchor_frac_fitwin      median    0.9670
+W2048_snap_anchor_frac_last128     median    0.3379
+W2048_snap_anchor_med_pos          median 2212.0000
+W2048_snap_evict                   median    0.1134
+W2048_snap_merged_l0.001           median    0.2705
+W2048_snap_merged_l0.1             median    0.1964
+W2048_snap_merged_l1               median    0.2343
+W2048_snap_removed_l0.001          median   -0.4563
+W2048_snap_removed_l0.1            median    0.0978
+W2048_snap_removed_l1              median    0.0019
+
+--- head-wise absolute comparisons (fraction of heads) ---
+W=  128 lam=0.001: h2o-merged < snap-evict in 0.99 of heads; h2o-merged < snap128-merged in 0.00; h2o-evict < snap-evict in 0.00; median h2o-merged/snap-evict = 0.721
+W=  128 lam=0.1: h2o-merged < snap-evict in 1.00 of heads; h2o-merged < snap128-merged in 0.00; h2o-evict < snap-evict in 0.00; median h2o-merged/snap-evict = 0.756
+W=  128 lam=1: h2o-merged < snap-evict in 1.00 of heads; h2o-merged < snap128-merged in 0.00; h2o-evict < snap-evict in 0.00; median h2o-merged/snap-evict = 0.792
+W= 1024 lam=0.001: h2o-merged < snap-evict in 0.46 of heads; h2o-merged < snap128-merged in 0.29; h2o-evict < snap-evict in 0.26; median h2o-merged/snap-evict = 49.084
+W= 1024 lam=0.1: h2o-merged < snap-evict in 0.45 of heads; h2o-merged < snap128-merged in 0.32; h2o-evict < snap-evict in 0.26; median h2o-merged/snap-evict = 47.697
+W= 1024 lam=1: h2o-merged < snap-evict in 0.42 of heads; h2o-merged < snap128-merged in 0.30; h2o-evict < snap-evict in 0.26; median h2o-merged/snap-evict = 42.853
+W= 2048 lam=0.001: h2o-merged < snap-evict in 0.32 of heads; h2o-merged < snap128-merged in 0.23; h2o-evict < snap-evict in 0.20; median h2o-merged/snap-evict = 64.148
+W= 2048 lam=0.1: h2o-merged < snap-evict in 0.32 of heads; h2o-merged < snap128-merged in 0.26; h2o-evict < snap-evict in 0.20; median h2o-merged/snap-evict = 63.413
+W= 2048 lam=1: h2o-merged < snap-evict in 0.30 of heads; h2o-merged < snap128-merged in 0.23; h2o-evict < snap-evict in 0.20; median h2o-merged/snap-evict = 60.419
+wrote ./experiments/expA_selector.json

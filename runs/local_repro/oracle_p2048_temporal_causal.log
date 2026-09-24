@@ -1,0 +1,11 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<00:34,  8.95it/s]Loading weights:  37%|███▋      | 115/311 [00:00<00:00, 641.21it/s]Loading weights:  65%|██████▌   | 203/311 [00:00<00:00, 743.81it/s]Loading weights:  94%|█████████▎| 291/311 [00:00<00:00, 794.35it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 732.59it/s]
+
+jointly-optimal class-A merge, budget 0.15, 112 heads   (fraction of squared eviction error removed)
+  lambda    in-sample     held-out
+   1e-06        0.519        0.141
+   0.001        0.515        0.138
+     0.1        0.420        0.131
+       1        0.295        0.118
+
+logit-gap Gaussianity: median |skew| nan, median excess kurtosis nan
+wrote runs/local_repro/oracle_p2048_temporal_causal.json

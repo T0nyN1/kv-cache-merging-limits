@@ -1,0 +1,1 @@
+modal run misc/modal/evaluate.py
