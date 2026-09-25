@@ -12,14 +12,16 @@ With that channel, merging a *pair* (1,2) into (k̄, v̄, b) where
     k̄ = (m₁k₁ + m₂k₂)/(m₁+m₂)          (logits are linear in k, so the merged
                                           logit is the mass-weighted mean)
     v̄ = (m₁v₁ + m₂v₂)/(m₁+m₂)
-    b  = E_w[ log(a₁w+a₂w) − l̄w ]        (fits the group's exp-mass exactly on
-                                          the observed queries; softmax Z cancels)
+    b  = E_w[ log(e^ℓ₁ + e^ℓ₂) − ℓ̄ ]     (fits the group's exp-mass exactly on the
+                                          observed queries; computed below from the
+                                          log-attention z = ℓ − log Z, where Z cancels
+                                          because the weights sum to one)
 
 leaves the per-query log-error  ε(q) = logcosh-type curvature of the pair's
 logit gap — **second order** in the gap where value-only merging is first
 order. Measured directly, per pair, from the stored window rows:
 
-    ε_w = log(a₁w + a₂w) − l̄w − b,       err = std over queries and heads.
+    ε_w = logaddexp(z₁w, z₂w) − z̄w − b,  err = std over queries and heads.
 
 Pairs with err below a break-even threshold are safe to consolidate; the freed
 slots admit additional tokens at the same physical budget. Selecting which
