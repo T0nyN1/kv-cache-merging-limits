@@ -24,5 +24,16 @@ env/
 # scratch output of new runs (the released results live in runs/)
 results/
 outputs/
-paper/figures/*.png
-paper/figures/*.pdf
+
+# local only: logs and job scripts of the follow-up runs (they contain machine paths),
+# and superseded measurements kept for the record
+runs/*/logs/
+runs/*/jobs/
+runs/_archive/
+
+# local only: the manuscript, its reviews and submission text.
+# Only the scripts that regenerate the paper's figures and tables are published.
+/paper/*
+!/paper/figures/
+/paper/figures/*
+!/paper/figures/*.py

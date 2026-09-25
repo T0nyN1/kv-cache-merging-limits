@@ -1,40 +1,0 @@
-Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<03:22,  1.53it/s]Loading weights:   1%|          | 2/311 [00:00<01:43,  2.97it/s]Loading weights:  47%|████▋     | 147/311 [00:00<00:00, 289.08it/s]Loading weights:  68%|██████▊   | 211/311 [00:01<00:00, 279.93it/s]Loading weights:  84%|████████▎ | 260/311 [00:01<00:00, 259.49it/s]Loading weights:  96%|█████████▋| 300/311 [00:01<00:00, 263.88it/s]Loading weights: 100%|██████████| 311/311 [00:01<00:00, 203.97it/s]
-[continuation0] L=2500 seps=107 capture 1.9s decode 9.0s heads 13.3s  gen=' " pretty girl " but as a person who is " beautiful " . This'
-[continuation1] L=2500 seps=88 capture 1.7s decode 7.2s heads 14.2s  gen=' France nor Britain , but rather the United States and the U'
-[continuation2] L=2500 seps=94 capture 1.8s decode 7.2s heads 13.7s  gen='2 , the capital was occupied and the Japanese military gover'
-[niah0] L=2462 seps=85 capture 1.7s decode 7.4s heads 13.8s  gen=' 889777.\nThe answer is: The answer is  \\boxed{893773}.\n\nWait'  answer_ok=False
-[niah1] L=2452 seps=90 capture 1.7s decode 7.2s heads 13.0s  gen=' 337491.\n\nThe user is asking for the secret code for an ambe'  answer_ok=False
-[niah2] L=2493 seps=62 capture 1.7s decode 7.1s heads 13.3s  gen=' 534614.\nThe answer is: The answer is \\boxed{533615}.\nThe an'  answer_ok=False
-
-== v8 offline: qwen3-1.7b budget 0.05   (336 heads) ==
-condition   dec mean  dec med  dec p90  aud mean  aud med   pairs   mass   g>0  <base  >1.05
-baseline      1.0000   1.0000   1.0000    1.0000   1.0000     0.0  0.000  0.00   0.00   0.00
-ot            0.9712   1.0000   1.0000    0.9577   1.0000    20.1  0.033  0.50   0.45   0.00
-greedy        0.9717   1.0000   1.0000    0.9591   1.0000    20.0  0.033  0.49   0.45   0.01
-nobias        0.9964   1.0000   1.0000    0.9947   1.0000    20.1  0.033  0.11   0.09   0.00
-random        0.9876   1.0000   1.0000    0.9826   1.0000    18.7  0.024  0.24   0.22   0.00
-oracle        0.9413   0.9583   0.9892    0.9699   0.9595    21.8  0.036  1.00   1.00   0.00
-ot decode gain (1-rel): mean +0.0288 [+0.0236, +0.0341] median +0.0000 without-top-10% +0.0162 worst head rel 1.1539
-ot audit gain:          mean +0.0423 [+0.0349, +0.0498]
-greedy - ot (decode):   mean +0.0005 [-0.0007, +0.0018] ot better in 0.23 of heads, tied 0.63
-oracle decode gain:     mean +0.0587 [+0.0526, +0.0648]
-time: costs 8.2s match 0.1s greedy 0.1s oracle 8.5s heads total 33.0s; evaluate_outputs vs harness max rel gap 1.41e-06
-gates: decode_gain_ge_5pct=FAIL, decode_gain_ci_excludes_zero=PASS, merges_not_near_zero=PASS, ot_beats_greedy=FAIL, oracle_shows_gain=PASS
-wrote runs/local_repro/v8_offline_qwen3-1.7b_b0.05.json
-
-== v8 offline: qwen3-1.7b budget 0.1   (336 heads) ==
-condition   dec mean  dec med  dec p90  aud mean  aud med   pairs   mass   g>0  <base  >1.05
-baseline      1.0000   1.0000   1.0000    1.0000   1.0000     0.0  0.000  0.00   0.00   0.00
-ot            0.9635   0.9397   1.0000    0.9110   0.9077    67.6  0.079  0.79   0.69   0.07
-greedy        0.9682   0.9451   1.0000    0.9129   0.9098    67.2  0.078  0.78   0.69   0.07
-nobias        1.0015   1.0000   1.0000    0.9877   1.0000    67.6  0.079  0.25   0.20   0.02
-random        0.9872   1.0000   1.0000    0.9548   0.9916    63.7  0.058  0.54   0.49   0.04
-oracle        0.8831   0.8947   0.9629    0.9621   0.8983    71.1  0.088  1.00   0.99   0.01
-ot decode gain (1-rel): mean +0.0365 [+0.0047, +0.0684] median +0.0603 without-top-10% +0.0111 worst head rel 3.8794
-ot audit gain:          mean +0.0890 [+0.0687, +0.1092]
-greedy - ot (decode):   mean +0.0047 [-0.0026, +0.0119] ot better in 0.49 of heads, tied 0.24
-oracle decode gain:     mean +0.1169 [+0.1042, +0.1296]
-time: costs 10.3s match 0.2s greedy 0.1s oracle 15.7s heads total 46.5s; evaluate_outputs vs harness max rel gap 1.05e-06
-gates: decode_gain_ge_5pct=FAIL, decode_gain_ci_excludes_zero=PASS, merges_not_near_zero=PASS, ot_beats_greedy=FAIL, oracle_shows_gain=PASS
-wrote runs/local_repro/v8_offline_qwen3-1.7b_b0.1.json
-total 145s

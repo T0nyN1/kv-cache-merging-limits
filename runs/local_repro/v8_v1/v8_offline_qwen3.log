@@ -1,46 +1,0 @@
-Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<00:38,  8.10it/s]Loading weights:  41%|████      | 126/311 [00:00<00:00, 673.66it/s]Loading weights:  68%|██████▊   | 213/311 [00:00<00:00, 757.72it/s]Loading weights:  97%|█████████▋| 301/311 [00:00<00:00, 796.28it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 725.82it/s]
-[continuation0] L=2500 seps=107 capture 1.8s decode 8.5s heads 16.7s  gen=' " pretty girl " but as a person who is " beautiful " . This'
-[continuation1] L=2500 seps=88 capture 1.7s decode 8.0s heads 17.8s  gen=' France nor Britain , but rather the United States and the U'
-[continuation2] L=2500 seps=94 capture 1.7s decode 8.0s heads 17.0s  gen='2 , the capital was occupied and the Japanese military gover'
-[niah0] L=2462 seps=85 capture 1.6s decode 8.3s heads 16.9s  gen=' 889777.\nThe answer is: The answer is  \\boxed{893773}.\n\nWait'  answer_ok=False
-[niah1] L=2452 seps=90 capture 1.6s decode 8.0s heads 16.3s  gen=' 337491.\n\nThe user is asking for the secret code for an ambe'  answer_ok=False
-[niah2] L=2493 seps=62 capture 1.6s decode 8.0s heads 16.7s  gen=' 534614.\nThe answer is: The answer is \\boxed{533615}.\nThe an'  answer_ok=False
-
-== v8 offline: qwen3-1.7b budget 0.05   (336 heads, 0 invalid) ==
-condition   dec mean  dec med  dec p90  dec pre  aud mean   prop   appl   mass   g>0  <base  >1.05
-baseline      1.0000   1.0000   1.0000   1.0000    1.0000    0.0    0.0  0.000  0.00   0.00   0.00
-ot            0.9676   1.0000   1.0000   0.9712    0.9577   20.1   10.3  0.020  0.50   0.49   0.00
-greedy        0.9682   1.0000   1.0000   0.9717    0.9591   20.0   10.1  0.020  0.49   0.48   0.00
-nobias        0.9974   1.0000   1.0000   0.9964    0.9947   20.1    2.3  0.005  0.11   0.10   0.00
-random        0.9839   1.0000   1.0000   0.9854    0.9802   20.1    5.7  0.010  0.26   0.25   0.00
-oracle        0.9426   0.9600   0.9888   0.9525    0.9579   20.8   20.8  0.038  1.00   1.00   0.00
-ot decode gain (1-rel): mean +0.0324  heads-CI [+0.0266, +0.0382]  prompt-cluster-CI [+0.0218, +0.0440] (6 prompts)
-                        median +0.0000 without-top-10% +0.0186 worst head rel 1.1477
-                        per prompt: continuation0 +0.024, continuation1 +0.051, continuation2 +0.052, niah0 +0.034, niah1 +0.017, niah2 +0.016
-ot audit gain:          mean +0.0423 [+0.0349, +0.0498]   ot decode gain, prefill-only cache: +0.0288 [+0.0236, +0.0341]
-greedy - ot (decode):   mean +0.0006  heads-CI [-0.0004, +0.0015]  cluster-CI [+0.0001, +0.0011]  ot better in 0.24 of heads, tied 0.63
-oracle decode gain:     mean +0.0574  cluster-CI [+0.0469, +0.0683]  median +0.0400
-time: costs 8.3s match 0.1s greedy 0.1s oracle 8.7s heads total 41.6s; evaluate_outputs vs harness max rel gap 3.31e-06
-gates: no_invalid_records=PASS, decode_gain_ge_5pct=FAIL, decode_gain_cluster_ci_excludes_zero=PASS, decode_gain_not_concentrated=FAIL, merges_applied_not_near_zero=PASS, ot_beats_greedy_cluster_ci=PASS, oracle_gain_positive=PASS, oracle_gain_ge_5pct=PASS
-H1 (deployable merge beats eviction): FAIL   H3 (matching beats greedy): PASS
-wrote runs/local_repro/v8_offline_qwen3-1.7b_b0.05.json
-
-== v8 offline: qwen3-1.7b budget 0.1   (336 heads, 0 invalid) ==
-condition   dec mean  dec med  dec p90  dec pre  aud mean   prop   appl   mass   g>0  <base  >1.05
-baseline      1.0000   1.0000   1.0000   1.0000    1.0000    0.0    0.0  0.000  0.00   0.00   0.00
-ot            0.9325   0.9280   1.0000   0.9628    0.9094   67.6   54.1  0.065  0.80   0.75   0.04
-greedy        0.9346   0.9294   1.0000   0.9669    0.9110   67.2   53.9  0.065  0.80   0.74   0.05
-nobias        0.9908   1.0000   1.0000   1.0015    0.9874   67.6   17.1  0.021  0.25   0.23   0.01
-random        0.9622   0.9874   1.0000   0.9793    0.9496   67.6   37.8  0.038  0.56   0.52   0.03
-oracle        0.8735   0.8889   0.9613   0.8997    0.9302   66.8   66.8  0.088  1.00   1.00   0.00
-ot decode gain (1-rel): mean +0.0675  heads-CI [+0.0492, +0.0859]  prompt-cluster-CI [+0.0330, +0.0998] (6 prompts)
-                        median +0.0720 without-top-10% +0.0446 worst head rel 2.4191
-                        per prompt: continuation0 +0.080, continuation1 +0.124, continuation2 +0.110, niah0 +0.023, niah1 +0.005, niah2 +0.063
-ot audit gain:          mean +0.0906 [+0.0703, +0.1108]   ot decode gain, prefill-only cache: +0.0372 [+0.0053, +0.0690]
-greedy - ot (decode):   mean +0.0021  heads-CI [-0.0017, +0.0059]  cluster-CI [-0.0008, +0.0060]  ot better in 0.47 of heads, tied 0.23
-oracle decode gain:     mean +0.1265  cluster-CI [+0.1121, +0.1409]  median +0.1111
-time: costs 10.4s match 0.2s greedy 0.1s oracle 15.5s heads total 57.6s; evaluate_outputs vs harness max rel gap 4.12e-06
-gates: no_invalid_records=PASS, decode_gain_ge_5pct=PASS, decode_gain_cluster_ci_excludes_zero=PASS, decode_gain_not_concentrated=PASS, merges_applied_not_near_zero=PASS, ot_beats_greedy_cluster_ci=FAIL, oracle_gain_positive=PASS, oracle_gain_ge_5pct=PASS
-H1 (deployable merge beats eviction): PASS   H3 (matching beats greedy): FAIL
-wrote runs/local_repro/v8_offline_qwen3-1.7b_b0.1.json
-total 167s

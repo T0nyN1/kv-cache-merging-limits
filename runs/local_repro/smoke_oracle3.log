@@ -1,10 +1,0 @@
-Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   1%|          | 2/311 [00:00<00:15, 19.65it/s]Loading weights:  36%|███▌      | 112/311 [00:00<00:00, 639.73it/s]Loading weights:  66%|██████▌   | 204/311 [00:00<00:00, 763.51it/s]Loading weights:  95%|█████████▌| 296/311 [00:00<00:00, 818.82it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 739.05it/s]
-
-jointly-optimal class-A merge, budget 0.15, 56 heads   (fraction of squared eviction error removed)
-  lambda    in-sample     held-out
-   1e-06        0.996       -0.140
-   0.001        0.925        0.180
-     0.1        0.696        0.201
-       1        0.459        0.179
-
-logit-gap Gaussianity: median |skew| 0.253, median excess kurtosis -0.095

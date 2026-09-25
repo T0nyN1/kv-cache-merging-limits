@@ -1,1 +1,0 @@
-{"task": "qasper", "method": "snapkv;observation_window=32;per_head=false;pool_kernel=7", "offset": 0, "scores": [0.2222222222222222, 0.030769230769230767]}

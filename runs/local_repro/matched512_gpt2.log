@@ -1,4 +1,0 @@
-Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 16524.37it/s]
-[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (15990 > 1024). Running this sequence through the model will result in indexing errors
-<venv>/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
-  warnings.warn('resource_tracker: There appear to be %d '

@@ -1,4 +1,0 @@
-Task,longbench,longbench,longbench,longbench
-Model,qasper_score,qasper_metric,qasper_tested_samples,qasper_truncated_samples
-snapkv;observation_window=32;per_head=false;pool_kernel=7,0.2222222222222222,qa_f1_score,1,0
-otkv8;observation_window=32;per_head=false;pool_kernel=7,0.19230769230769232,qa_f1_score,1,0
